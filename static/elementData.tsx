@@ -1,4 +1,47 @@
-const elementData: object = {
+interface ElementDataType {
+  root: {
+    styles: React.CSSProperties;
+    children: {
+      card: {
+        style: React.CSSProperties;
+        children: {
+          cardOne: {
+            style: React.CSSProperties;
+            children: {
+              hOne: {
+                textNode: string;
+              };
+              pTag: {
+                textNode: string;
+              };
+            };
+          };
+          cardTwo: {
+            style: React.CSSProperties;
+            children: {
+              hOne: {
+                textNode: string;
+              };
+              pTag: {
+                textNode: string;
+              };
+            };
+          };
+        };
+      };
+      arrow: {
+        style: React.CSSProperties;
+        textNode: string;
+      };
+      sideBar: {
+        style: React.CSSProperties;
+        textNode: string;
+      };
+    };
+  };
+}
+
+const elementData: ElementDataType = {
   root: {
     styles: {
       width: '100vw',
@@ -63,3 +106,5 @@ const elementData: object = {
     },
   },
 };
+
+export default elementData;
