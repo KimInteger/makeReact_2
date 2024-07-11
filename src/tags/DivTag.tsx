@@ -1,6 +1,6 @@
 interface DivTag {
   textNode: string;
-  styles: React.CSSProperties;
+  styles?: React.CSSProperties;
 }
 
 const MakeDiv: React.FC<DivTag> = ({ textNode, styles }) => {
