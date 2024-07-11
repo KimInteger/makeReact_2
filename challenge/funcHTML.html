@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const style = document.createElement('style');
+      style.textContent = '* { margin: 0; padding: 0; }';
+      document.head.appendChild(style);
+
+      const root = document.getElementById('root');
+      function assignStyle(element, styles) {
+        for (key in styles) {
+          element.style[key] = styles[key];
+        }
+      }
+
+      function createElement(element, styles) {
+        let tag = document.createElement(element);
+        assignStyle(tag, styles);
+        return tag;
+      }
+
+      const elementData = {
+        root: {
+          styles: {
+            width: '100vw',
+            height: '100vh',
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gpa: '50px',
+          },
+          children: {
+            card: {
+              style: {},
+              children: {
+                cardOne: {
+                  style: {},
+                  children: {},
+                },
+                cardTwo: {
+                  style: {},
+                  children: {},
+                },
+              },
+            },
+            arrow: {
+              style: {},
+              textNode: '',
+            },
+            sideBar: {
+              style: {},
+              textNode: '',
+            },
+          },
+        },
+      };
+
+      assignStyle(root, elementData.root.styles);
+    </script>
+  </body>
+</html>
