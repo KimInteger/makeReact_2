@@ -1,6 +1,6 @@
 import React from 'react';
 import elementData from '../static/elementData';
-import MakeDiv from './tags/makeTag';
+import MakeDiv from './tags/DivTag';
 
 const App: React.FC = () => {
   return (
