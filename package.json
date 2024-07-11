@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KimInteger/bundlePrac_2.git"
+    "url": "git+https://github.com/KimInteger/makeReact_2.git"
   },
   "author": "KimInteger",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KimInteger/bundlePrac_2/issues"
+    "url": "https://github.com/KimInteger/makeReact_2/issues"
   },
-  "homepage": "https://github.com/KimInteger/bundlePrac_2#readme",
+  "homepage": "https://github.com/KimInteger/makeReact_2#readme",
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
