@@ -1,8 +1,10 @@
-interface divTag {
+interface DivTag {
   textNode: string;
   styles: React.CSSProperties;
 }
 
-const divTag: React.FC<divTag> = ({ textNode, styles }) => {
+const MakeDiv: React.FC<DivTag> = ({ textNode, styles }) => {
   return <div style={styles}>{textNode}</div>;
 };
+
+export default MakeDiv;
